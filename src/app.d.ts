@@ -1,5 +1,11 @@
 /// <reference types="@sveltejs/kit" />
 
+type Todo = {
+	create_at: Date;
+	text: string;
+	done: boolean;
+}
+
 // See https://kit.svelte.dev/docs/typescript
 // for information about these interfaces
 declare namespace App {
@@ -11,3 +17,4 @@ declare namespace App {
 
 	interface Stuff {}
 }
+
